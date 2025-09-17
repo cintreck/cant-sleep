@@ -1,0 +1,36 @@
+{
+    "schemaVersion": 1,
+    "id": "cant_sleep",
+    "version": "${version}",
+    "name": "Can't Sleep",
+    "description": "Some nights shows a message similar to \"There are monsters nearby\" and blocks sleep until the next day. Easily configurable.",
+    "authors": [
+        "cintreck"
+    ],
+    "contact": {
+        "homepage": "https://modrinth.com/user/cintreck",
+        "sources": "https://github.com/cintreck/cant-sleep"
+    },
+    "license": "CC0-1.0",
+    "icon": "assets/cant_sleep/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "com.codex.cant_sleep.CantSleepModInitializer"
+        ],
+        "modmenu": [
+            "com.codex.cant_sleep.CantSleepClientModMenuBridge"
+        ]
+    },
+    "mixins": [],
+    "depends": {
+        "fabricloader": ">=0.17.2",
+        "minecraft": ">=1.21.2 <=1.21.8",
+        "java": ">=21",
+        "fabric-api": "*"
+    },
+    "suggests": {
+        "cloth-config2": "*",
+        "modmenu": "*"
+    }
+}
